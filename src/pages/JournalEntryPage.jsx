@@ -360,9 +360,9 @@ function JournalEntryPage() {
           {/* Entry Header */}
           <div className="entry-card">
             <div className="entry-header">
-              <div className="entry-date">
+              {/* <div className="entry-date">
                 On {formatDateSafe(entry.date.includes(',') ? entry.date.split(',')[0].trim() : entry.date)}...
-              </div>
+              </div> */}
               {/* <h1 className="entry-title">You wrote:</h1> */}
             </div>
 
