@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* For Branding and Headings */
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
+
+@import url('react-toastify/dist/ReactToastify.css');
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #1a1a1a;
+}
+
+h1, h2, h3 {
+  font-family: "Domine", serif;
+  font-weight: 700;
+}

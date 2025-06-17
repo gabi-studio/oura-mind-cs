@@ -1,0 +1,44 @@
+.affirmation-card {
+  margin: 2rem 0;
+
+  border: 1px solid #f5f5f5;
+  border-radius: 12px;
+  padding: 1rem 0 0.5rem 0; 
+  margin: 1.5rem 0 1.5rem 0;
+  transition: all 0.2s ease;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(26, 26, 26, 0.06);
+}
+.affirmation-card h2 {
+  margin-bottom: 0.5rem;
+}
+
+.affirmation-text {
+  font-style: italic;
+  margin: 1rem 0;
+}
+
+.action-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-block;
+  text-align: center;
+  min-width: 60px;
+}
+
+.action-btn-primary {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-color: #1a1a1a;
+}
+
+.action-btn-primary:hover {
+  background-color: #2a2a2a;
+  border-color: #2a2a2a;
+}

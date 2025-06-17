@@ -1,0 +1,282 @@
+/* ToolFormPage.css */
+
+/* Page & Container Layout */
+.tool-form-page {
+  min-height: calc(100vh - 80px);
+  background-color: #fafafa;
+}
+
+.tool-form-container {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Section Card Style */
+.tools-section {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(26, 26, 26, 0.06);
+}
+
+.tools-title {
+  color: #1a1a1a;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.tool-description {
+  color: #1a1a1a;
+  opacity: 0.7;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.tool-instructions {
+  color: #1a1a1a;
+  opacity: 0.8;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border-left: 3px solid #1a1a1a;
+}
+
+/* Form Content Sections */
+.entry-content {
+  margin-bottom: 1.5rem;
+}
+
+.entry-content label {
+  color: #1a1a1a;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: block;
+  font-size: 1rem;
+}
+
+/* Textarea Styling */
+.entry-content textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+  font-size: 1rem;
+  min-height: 120px;
+  resize: vertical;
+  font-family: inherit;
+  line-height: 1.5;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.entry-content textarea:focus {
+  border-color: #1a1a1a;
+  outline: none;
+}
+
+.entry-content textarea::placeholder {
+  color: #999;
+  opacity: 0.7;
+}
+
+/* Range Input (Mood Sliders) */
+.entry-content input[type="range"] {
+  width: 100%;
+  margin: 0.5rem 0;
+  accent-color: #1a1a1a;
+  height: 6px;
+  background: #e8e8e8;
+  border-radius: 3px;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.entry-content input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #1a1a1a;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 4px rgba(26, 26, 26, 0.2);
+}
+
+.entry-content input[type="range"]::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #1a1a1a;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 4px rgba(26, 26, 26, 0.2);
+}
+
+/* Mood Value Display */
+.entry-content span {
+  font-weight: 500;
+  color: #1a1a1a;
+  font-size: 0.9rem;
+}
+
+/* Buttons */
+.tool-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.tool-btn-primary {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.tool-btn-primary:hover {
+  background-color: #2a2a2a;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(26, 26, 26, 0.15);
+}
+
+.tool-btn-secondary {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border: 1px solid #e8e8e8;
+}
+
+.tool-btn-secondary:hover {
+  background-color: #f5f5f5;
+  border-color: #d0d0d0;
+}
+
+/* Back Button */
+.action-btn {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.action-btn:hover {
+  background-color: #f5f5f5;
+  border-color: #d0d0d0;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(26, 26, 26, 0.08);
+}
+
+/* Form Styling */
+form.tools-section {
+  margin-bottom: 0;
+}
+
+/* Loading and Error States */
+.journal-entry-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+  color: #1a1a1a;
+  font-size: 1.1rem;
+}
+
+.journal-entry-error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+  color: #1a1a1a;
+  padding: 2rem;
+  text-align: center;
+}
+
+.journal-entry-error h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.journal-entry-error p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tool-form-container {
+    padding: 1rem 0.5rem;
+  }
+
+  .tools-section {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .tools-title {
+    font-size: 1.1rem;
+  }
+
+  .entry-content {
+    margin-bottom: 1.25rem;
+  }
+
+  .entry-content textarea {
+    min-height: 100px;
+    padding: 0.75rem;
+  }
+
+  .tool-btn,
+  .action-btn {
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem;
+  }
+
+  .entry-content input[type="range"] {
+    margin: 0.75rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .tool-form-container {
+    padding: 0.75rem 0.25rem;
+  }
+
+  .tools-section {
+    padding: 1.25rem;
+  }
+
+  .tools-title {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .entry-content {
+    margin-bottom: 1rem;
+  }
+}

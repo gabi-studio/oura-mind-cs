@@ -1,0 +1,221 @@
+/* ToolSuggestions.css */
+.tools-section {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(26, 26, 26, 0.06);
+}
+
+.tools-title {
+  color: #1a1a1a;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.tools-description {
+  color: #1a1a1a;
+  opacity: 0.7;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.tools-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.tool-card {
+  border: 1px solid #f5f5f5;
+  border-radius: 8px;
+  padding: 1.25rem;
+  background-color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.tool-card:hover {
+  border-color: #e8e8e8;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(26, 26, 26, 0.08);
+}
+
+.tool-info {
+  margin-bottom: 0.75rem;
+}
+
+.tool-name {
+  color: #1a1a1a;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.tool-description {
+  color: #1a1a1a;
+  opacity: 0.7;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.tool-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.tool-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.tool-btn-primary {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.tool-btn-primary:hover {
+  background-color: #2a2a2a;
+}
+
+/* CompletedToolList.css */
+.tool-card.completed {
+  background-color: #f9f9f9;
+  border: 1px solid #1a1a1a;
+}
+
+.tool-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.tool-btn-secondary {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border: 1px solid #e8e8e8;
+}
+
+.tool-btn-secondary:hover {
+  background-color: #f5f5f5;
+}
+
+/* ToolFormPage.css */
+.tool-form-page {
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.tool-form-container {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(26, 26, 26, 0.06);
+}
+
+.tool-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.tool-description {
+  color: #444;
+  opacity: 0.8;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.tool-instructions {
+  font-style: italic;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.tool-section {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.prompt-group {
+  margin-bottom: 1.5rem;
+}
+
+.prompt-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.prompt-textarea {
+  width: 100%;
+  min-height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.mood-rating-group {
+  margin-bottom: 1.5rem;
+}
+
+.mood-label {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.mood-options {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.mood-radio input[type='radio'] {
+  margin-right: 0.3rem;
+}
+
+.form-actions {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.submit-btn {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #333;
+}

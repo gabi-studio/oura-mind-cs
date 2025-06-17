@@ -1,0 +1,134 @@
+.auth-page {
+  max-width: 420px;
+  margin: 50px auto;
+  padding: 20px;
+  min-height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+}
+
+.auth-form {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 8px 32px rgba(26, 26, 26, 0.08);
+  width: 100%;
+}
+
+.auth-title {
+  text-align: center;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.auth-error {
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #1a1a1a;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.875rem;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #1a1a1a;
+  box-shadow: 0 0 0 3px rgba(26, 26, 26, 0.08);
+}
+
+.form-input:disabled {
+  background-color: #f9f9f9;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.auth-submit-btn {
+  width: 100%;
+  padding: 0.875rem;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.auth-submit-btn:hover:not(:disabled) {
+  background-color: #2a2a2a;
+  box-shadow: 0 4px 16px rgba(26, 26, 26, 0.2);
+}
+
+.auth-submit-btn:disabled {
+  background-color: #e8e8e8;
+  color: #1a1a1a;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.auth-submit-btn.register {
+  background-color: #2a2a2a;
+}
+
+.auth-submit-btn.register:hover:not(:disabled) {
+  background-color: #1a1a1a;
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 2rem;
+  color: #1a1a1a;
+  opacity: 0.7;
+}
+
+.auth-link a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+  .auth-page {
+    margin: 20px auto;
+    padding: 10px;
+  }
+  
+  .auth-form {
+    padding: 2rem;
+  }
+}

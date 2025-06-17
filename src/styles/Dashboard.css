@@ -1,0 +1,656 @@
+/* ---------------------------
+   Dashboard Common Layout
+------------------------------*/
+
+.dashboard-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.loading-simple,
+.error-state {
+  text-align: center;
+  margin: 4rem auto;
+}
+
+.retry-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.new-entry-btn-simple {
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 0.6rem 1.2rem;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.empty-state-simple {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.empty-state-link-simple {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #1a1a1a;
+  text-decoration: underline;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ---------------------------
+   Simple Stats
+------------------------------*/
+
+.simple-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.simple-stat {
+  background: #f9f9f9;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.simple-stat-number {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.simple-stat-label {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+/* ---------------------------
+   View Controls (Switch & New Entry Button)
+------------------------------*/
+
+.view-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.view-switcher {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.view-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.view-btn.active {
+  background: #1a1a1a;
+  color: white;
+  border-color: #1a1a1a;
+}
+
+/* ---------------------------
+   Weekly Nav (for Reflector)
+------------------------------*/
+/* ---------------------------
+   Dashboard Common Layout
+------------------------------*/
+
+.dashboard-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.loading-simple,
+.error-state {
+  text-align: center;
+  margin: 4rem auto;
+}
+
+.retry-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.new-entry-btn-simple {
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 0.6rem 1.2rem;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.new-entry-btn-simple:hover {
+  background: #2a2a2a;
+}
+
+.empty-state-simple {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.empty-state-link-simple {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #1a1a1a;
+  text-decoration: underline;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ---------------------------
+   Simple Stats
+------------------------------*/
+
+.simple-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.simple-stat {
+  background: #f9f9f9;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.simple-stat-number {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.simple-stat-label {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+/* ---------------------------
+   View Controls (Switch & New Entry Button)
+------------------------------*/
+
+.view-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.view-switcher {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.view-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.view-btn.active {
+  background: #1a1a1a;
+  color: white;
+  border-color: #1a1a1a;
+}
+
+/* ---------------------------
+   Weekly Nav (for Reflector)
+------------------------------*/
+
+.weekly-nav {
+  margin: 2rem 0;
+}
+
+.weekly-nav-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.week-nav-arrow {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.week-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.day-dot {
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.day-dot.today {
+  border: 2px solid #1a1a1a;
+}
+
+.day-dot.selected {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.day-dot.has-entries {
+  font-weight: bold;
+}
+
+.entry-count {
+  display: block;
+  font-size: 0.7rem;
+  color: #1a1a1a;
+  margin-top: 0.25rem;
+}
+
+/* ---------------------------
+   Dashboard Content
+------------------------------*/
+
+.dashboard-content {
+  margin-top: 2rem;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.content-title {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.content-date {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* ---------------------------
+   Entry List Items (shared)
+------------------------------*/
+
+.entry-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.entry-item {
+  background: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.entry-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.entry-title {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.entry-subtitle,
+.entry-time {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.entry-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.entry-preview {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.entry-stats {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: #555;
+  display: flex;
+  gap: 1rem;
+}
+
+/* ---------------------------
+   Action Buttons
+------------------------------*/
+
+
+.action-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-block;
+  text-align: center;
+  min-width: 60px;
+}
+
+.action-btn-primary {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-color: #1a1a1a;
+}
+
+.action-btn-primary:hover {
+  background-color: #2a2a2a;
+  border-color: #2a2a2a;
+}
+
+.action-btn-secondary {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border-color: #e8e8e8;
+}
+
+.action-btn-secondary:hover {
+  background-color: #f5f5f5;
+  border-color: #d0d0d0;
+}
+
+.action-btn-delete {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border-color: #e8e8e8;
+}
+
+.action-btn-delete:hover {
+  background-color: #f5f5f5;
+  border-color: #d0d0d0;
+}
+
+.prompt-item {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.modal-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.modal-form input,
+.modal-form textarea,
+.modal-form select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  margin-top: 0.25rem;
+  font-size: 0.95rem;
+}
+
+
+/* ---------------------------
+   Dashboard Content
+------------------------------*/
+
+.dashboard-content {
+  margin-top: 2rem;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.content-title {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.content-date {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* ---------------------------
+   Entry List Items (shared)
+------------------------------*/
+
+.entry-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.entry-item {
+  background: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.entry-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.entry-title {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.entry-subtitle,
+.entry-time {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.entry-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.entry-preview {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.entry-stats {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: #555;
+  display: flex;
+  gap: 1rem;
+}
+
+/* ---------------------------
+   Action Buttons
+------------------------------*/
+
+
+.action-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-block;
+  text-align: center;
+  min-width: 60px;
+}
+
+.action-btn-primary {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-color: #1a1a1a;
+}
+
+.action-btn-primary:hover {
+  background-color: #2a2a2a;
+  border-color: #2a2a2a;
+}
+
+.action-btn-secondary {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border-color: #e8e8e8;
+}
+
+.action-btn-secondary:hover {
+  background-color: #f5f5f5;
+  border-color: #d0d0d0;
+}
+
+.action-btn-delete {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border-color: #e8e8e8;
+}
+
+.action-btn-delete:hover {
+  background-color: #f5f5f5;
+  border-color: #d0d0d0;
+}
+
+.prompt-item {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.modal-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.modal-form input,
+.modal-form textarea,
+.modal-form select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  margin-top: 0.25rem;
+  font-size: 0.95rem;
+  resize: none;
+}
+
+
+/* Sort Tools Styles */
+.sort-tools {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.sort-tools label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.sort-tools select {
+  padding: 0.75rem;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.sort-tools select:focus {
+  outline: none;
+  border-color: #1a1a1a;
+  box-shadow: 0 0 0 2px rgba(26, 26, 26, 0.1);
+}
+
+@media (max-width: 768px) {
+  .sort-tools {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

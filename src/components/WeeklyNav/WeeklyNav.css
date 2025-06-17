@@ -1,0 +1,107 @@
+/* src/components/WeeklyNav.css */
+
+.weekly-nav {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(26, 26, 26, 0.06);
+}
+
+.weekly-nav-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.week-nav-arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  color: #1a1a1a;
+  transition: background 0.2s ease;
+}
+
+.week-nav-arrow:hover {
+  background: #f5f5f5;
+}
+
+.week-dots {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.day-dot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 55px;
+  padding: 0.75rem 0.5rem;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  background: #fff;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.day-dot:hover {
+  border-color: #1a1a1a;
+  transform: translateY(-2px);
+}
+
+.day-dot.has-entries {
+  border-color: #1a1a1a;
+  background: #f9f9f9;
+}
+
+.day-dot.today,
+.day-dot.selected {
+  background: #1a1a1a;
+  color: #ffffff;
+  border-color: #1a1a1a;
+}
+
+.day-label {
+  font-size: 0.7rem;
+  font-weight: 500;
+  opacity: 0.8;
+  margin-bottom: 0.25rem;
+}
+
+.day-number {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.entry-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #1a1a1a;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.day-dot.today .entry-count,
+.day-dot.selected .entry-count {
+  background: #ffffff;
+  color: #1a1a1a;
+}

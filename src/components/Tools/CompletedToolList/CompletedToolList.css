@@ -1,0 +1,80 @@
+/* CompletedToolList.css */
+
+.completed-tools-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e0e0e0;
+}
+
+.completed-tools-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+
+
+
+.tool-card.completed {
+  background-color: #fdfdfd;
+  border: 1px solid #dcdcdc;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+}
+
+.tool-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.tool-card-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333333;
+}
+
+.tool-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.status-badge {
+  padding: 0.3rem 0.8rem;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.tool-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.tool-btn-secondary {
+  padding: 0.4rem 0.9rem;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.tool-btn-secondary:hover {
+  background-color: #f3f3f3;
+}
+
+.tool-btn-secondary:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.1);
+}

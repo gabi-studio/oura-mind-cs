@@ -1,0 +1,231 @@
+/* CompletedToolViewPage.css */
+
+/* Page & Container Layout */
+.tool-form-page {
+  min-height: calc(100vh - 80px);
+  background-color: #fafafa;
+}
+
+.tool-form-container {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Tool Info */
+.tool-title {
+  color: #1a1a1a;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.tool-description,
+.tool-instructions {
+  color: #1a1a1a;
+  opacity: 0.7;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.tool-instructions {
+  font-style: italic;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border-left: 3px solid #1a1a1a;
+}
+
+/* Tool Sections */
+.tool-section {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(26, 26, 26, 0.06);
+}
+
+.section-title {
+  color: #1a1a1a;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Mood Rating Groups */
+.mood-rating-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.mood-label {
+  font-weight: 500;
+  color: #1a1a1a;
+  text-transform: capitalize;
+}
+
+.mood-rating-group span {
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+/* Prompt Groups */
+.prompt-group {
+  margin-bottom: 1.5rem;
+}
+
+.prompt-label {
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.prompt-response {
+  color: #1a1a1a;
+  opacity: 0.9;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  padding: 0.75rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border-left: 3px solid #e8e8e8;
+}
+
+/* Action Buttons - Matches Journal Page Exactly */
+.tool-btn {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 0.95rem;
+  margin-right: 0.75rem;
+  text-align: center;
+}
+
+.tool-btn:hover {
+  background-color: #f5f5f5;
+  border-color: #d0d0d0;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(26, 26, 26, 0.08);
+}
+
+.tool-btn-secondary {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border: 1px solid #e8e8e8;
+}
+
+.tool-btn-secondary:hover {
+  background-color: #f5f5f5;
+  border-color: #d0d0d0;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(26, 26, 26, 0.08);
+}
+
+.tool-btn-delete {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border: 1px solid #e8e8e8;
+}
+
+.tool-btn-delete:hover {
+  background-color: #f5f5f5;
+  border-color: #d0d0d0;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(26, 26, 26, 0.08);
+}
+
+.tool-btn-primary {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border: 1px solid #1a1a1a;
+}
+
+.tool-btn-primary:hover {
+  background-color: #2a2a2a;
+  border-color: #2a2a2a;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(26, 26, 26, 0.15);
+}
+
+/* Form Actions */
+.form-actions {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 2px 8px rgba(26, 26, 26, 0.06);
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* Loading State */
+p {
+  color: #1a1a1a;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tool-form-container {
+    padding: 1rem 0.5rem;
+  }
+
+  .tool-section {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .tool-btn {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0.75rem;
+  }
+
+  .tool-btn:last-child {
+    margin-bottom: 0;
+  }
+
+  .mood-rating-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tool-form-container {
+    padding: 0.75rem 0.25rem;
+  }
+
+  .tool-section {
+    padding: 1.25rem;
+  }
+
+  .tool-title {
+    font-size: 1.25rem;
+  }
+
+  .section-title {
+    font-size: 1.1rem;
+  }
+}
