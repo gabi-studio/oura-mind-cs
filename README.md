@@ -1,12 +1,26 @@
-# React + Vite
+# OuraMind Journal - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the React frontend for the Oura Mind Journal. Users can write encrypted journal entries, get AI-powered emotion analysis, and use reflection tools for self-care.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Users can create an account and securely log in,
+- Each journal entry is encrypted before it is saved,
+- When a user writes a journal entry, it is analyzed by IBM Watson NLU to detect key emotions,
+- Based on the detected emotion(s), the user receives suggested reflection tools to help process their feelings.
+- The app also provides a quote or affirmation to guide the user that matches the emotion detected in the entry,
+- Users can view all their past entries in a clean, minimal dashboard designed to create a calm journaling experience  
 
-## Expanding the ESLint configuration
+<!-- deployment details -->
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Links
+
+This app is currently deployed [here]:(https://oura-mind-journal.netlify.app/)
+
+- Admin details
+-- user: admin@ouramind.com 
+-- password: admin123
+
+- Reflector details
+-- user: reflector@ouramind.com 
+-- password: reflector123
