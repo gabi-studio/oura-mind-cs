@@ -5,16 +5,25 @@
   min-height: calc(100vh - 100px);
   display: flex;
   align-items: center;
+  animation: fade-glow 0.8s ease-out both;
 }
 
 .auth-form {
-  background: #ffffff;
+  background: #f5f5f5;
   padding: 2.5rem;
-  border-radius: 12px;
+  /* border-radius: 12px;
   border: 1px solid #e8e8e8;
-  box-shadow: 0 8px 32px rgba(26, 26, 26, 0.08);
+  box-shadow: 0 8px 32px rgba(26, 26, 26, 0.08),
+              0 0 12px rgba(100, 100, 100, 0.08); soft glow */
   width: 100%;
+  transition: box-shadow 0.4s ease;
 }
+
+/* .auth-form:hover {
+  box-shadow: 0 12px 40px rgba(26, 26, 26, 0.1),
+              0 0 20px rgba(100, 100, 100, 0.1);
+} */
+
 
 .auth-title {
   text-align: center;
@@ -119,6 +128,20 @@
 
 .auth-link a:hover {
   text-decoration: underline;
+}
+
+
+@keyframes fade-glow {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    filter: brightness(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: brightness(1);
+  }
 }
 
 /* Mobile responsive */

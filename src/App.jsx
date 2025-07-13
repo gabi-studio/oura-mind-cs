@@ -3,6 +3,10 @@ import { AuthProvider, useAuth } from './contexts/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute';
 import Navigation from './components/Reusables/Navigation';
 
+import LandingPage from './pages/LandingPage';
+import PublicNavBar from './components/PublicNavBar/PublicNavbar';
+import AboutOuraPage from './pages/AboutOuraPage';
+
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 // import ReflectorDashboard from './components/Dashboard/ReflectorDashboard';
@@ -37,22 +41,22 @@ import './styles/App.css';
 // -------------------------------
 // Landing page component
 // -------------------------------
-function LandingPage() {
-  return (
-    <div className="landing-page">
-      <div className="landing-container">
-        <h1 className="landing-title">Welcome to Oura Mind Journal</h1>
-        <p className="landing-subtitle">
-          A safe space for reflection, growth, and emotional wellness.
-        </p>
-        <div className="landing-buttons">
-          <a href="/login" className="landing-btn login">Login</a>
-          <a href="/register" className="landing-btn register">Sign Up</a>
-        </div>
-      </div>
-    </div>
-  );
-}
+// function LandingPage() {
+//   return (
+//     <div className="landing-page">
+//       <div className="landing-container">
+//         <h1 className="landing-title">Welcome to Oura Mind Journal</h1>
+//         <p className="landing-subtitle">
+//           A safe space for reflection, growth, and emotional wellness.
+//         </p>
+//         <div className="landing-buttons">
+//           <a href="/login" className="landing-btn login">Login</a>
+//           <a href="/register" className="landing-btn register">Sign Up</a>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
 // -------------------------------
 // Main Dashboard selector
@@ -72,17 +76,22 @@ function AppContent() {
   const location = useLocation();
   // Pages without nav: landing, login, register, and public journal entries
   // Public journal entries will have a token in the URL
-  const hideNavOn = ['/', '/login', '/register'];
-  const isPublicPage = location.pathname.startsWith('/public/');
-  const showNavigation = !(hideNavOn.includes(location.pathname) || isPublicPage);
+  // const hideNavOn = ['/', '/login', '/register'];
+  const { isAuthenticated } = useAuth();
+  const isPublicShare = location.pathname.startsWith('/public/');
+  const showPublicNavbar = !isAuthenticated && !isPublicShare;
+  const showAuthenticatedNavbar = isAuthenticated;
 
   return (
     <>
         
-      {showNavigation && <Navigation />}
+      {showPublicNavbar && <PublicNavBar />}
+      {showAuthenticatedNavbar && <Navigation />}
+
       <div className="App">
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/about" element={<AboutOuraPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/public/:token" element={<PublicEntryPage />} />
@@ -180,7 +189,7 @@ function AppContent() {
       </div>
 
     <ToastContainer />
-      {showNavigation && <Footer />}
+      {showAuthenticatedNavbar && <Footer />}
     </>
   );
 }

@@ -1,89 +1,90 @@
-.landing-page {
+/* Page Background */
+.page {
   min-height: 100vh;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #2c2c2c);
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fafafa;
-  padding: 2rem;
+  padding: 0;
 }
 
-.landing-container {
-  max-width: 500px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  border-radius: 12px;
-  border: 1px solid #e8e8e8;
-  padding: 3rem;
+/* Layout */
+.content {
   text-align: center;
-  box-shadow: 0 2px 8px rgba(26, 26, 26, 0.06);
+  max-width: 600px;
 }
 
-.landing-title {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
-  color: #1a1a1a;
+/* Fade-in Animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.landing-subtitle {
-  font-size: 1rem;
-  margin-bottom: 2rem;
-  color: #1a1a1a;
-  opacity: 0.7;
-  line-height: 1.5;
+.fade-in {
+  animation: fade-in 1.2s ease-out forwards;
 }
 
-.landing-buttons {
+/* Title and Glow */
+.title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.02em;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+}
+
+.highlight {
+  background: linear-gradient(90deg, #b5b5b5, #787878);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Tagline */
+.tagline {
+  color: #ccc;
+  font-size: 1.125rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Buttons */
+.buttons {
   display: flex;
-  gap: 1rem;
   justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.landing-btn {
-  padding: 0.75rem 1.5rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: all 0.2s ease;
+.button {
   display: inline-block;
+  padding: 0.75rem 2rem;
+  border: 1px solid #999;
+  border-radius: 999px;
+  color: white;
+  background: transparent;
+  text-decoration: none;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
 }
 
-.landing-btn.login {
-  background-color: #ffffff;
-  color: #1a1a1a;
-  border: 1px solid #e8e8e8;
+.button:hover {
+  background: white;
+  color: black;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
 }
 
-.landing-btn.login:hover {
-  background-color: #f5f5f5;
+.button.secondary {
+  border-color: #666;
+  background: rgba(255, 255, 255, 0.05);
 }
 
-.landing-btn.register {
-  background-color: #1a1a1a;
-  color: #ffffff;
-  border: 1px solid #1a1a1a;
-}
-
-.landing-btn.register:hover {
-  background-color: #2a2a2a;
-}
-
-/* Mobile responsive */
-@media (max-width: 768px) {
-  .landing-page {
-    padding: 1rem;
-  }
-  
-  .landing-container {
-    padding: 2rem;
-  }
-  
-  .landing-buttons {
-    flex-direction: column;
-  }
-  
-  .landing-btn {
-    width: 100%;
-  }
+.button.secondary:hover {
+  background: white;
+  color: black;
 }
