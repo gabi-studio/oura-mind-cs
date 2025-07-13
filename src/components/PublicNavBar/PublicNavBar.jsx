@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import "../Reusables/Navigation.css"; 
+import "../Reusables/navigation.css"; 
 
 export default function PublicNavBar() {
   const location = useLocation();
