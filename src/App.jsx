@@ -4,7 +4,7 @@ import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute';
 import Navigation from './components/Reusables/Navigation';
 
 import LandingPage from './pages/LandingPage';
-import PublicNavBar from './components/PublicNavBar/PublicNavbar';
+import PublicNavBar from './components/PublicNavBar/PublicNavBar';
 import AboutOuraPage from './pages/AboutOuraPage';
 
 import LoginPage from './pages/LoginPage';
@@ -79,13 +79,13 @@ function AppContent() {
   // const hideNavOn = ['/', '/login', '/register'];
   const { isAuthenticated } = useAuth();
   const isPublicShare = location.pathname.startsWith('/public/');
-  const showPublicNavbar = !isAuthenticated && !isPublicShare;
+  const showPublicNavBar = !isAuthenticated && !isPublicShare;
   const showAuthenticatedNavbar = isAuthenticated;
 
   return (
     <>
         
-      {showPublicNavbar && <PublicNavBar />}
+      {showPublicNavBar && <PublicNavBar />}
       {showAuthenticatedNavbar && <Navigation />}
 
       <div className="App">
