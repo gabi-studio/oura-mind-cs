@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, Navigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
+import LoadingSpinner from '../components/LoadingSpinner/LoadingSpinner';
 import '../styles/Auth.css';
 
 function LoginPage() {
@@ -59,7 +60,7 @@ function LoginPage() {
         height: '100vh',
         color: '#1a1a1a'
       }}>
-        Checking authentication...
+        <LoadingSpinner />
       </div>
     );
   }
